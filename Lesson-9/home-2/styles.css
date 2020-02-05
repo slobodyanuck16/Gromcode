@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 .header {
     height: 40px;
     width: 100%;
@@ -13,7 +17,7 @@
 .nav-item {
     float: left;
     color: white;
-    margin-left: 16px;
+    padding-left: 16px;
     list-style-type: none;
 }
 
