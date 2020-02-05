@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .header {
+            height: 40px;
+            background-color: yellow;
+            display: flex;
+            align-items: center;
+        }
+        
+        .footer {
+            height: 40px;
+            background-color: green;
+            display: flex;
+        }
+        
+        .footer_text {
+            margin: auto;
+        }
+        
+        .navigation {
+            margin: 0;
+            display: flex;
+            list-style-type: none;
+        }
+        
+        .navigation_item {
+            margin-left: 16px;
+        }
+        
+        .allpage {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        
+        .content {
+            flex-grow: 1;
+            display: flex;
+        }
+        
+        .dashboard {
+            background-color: pink;
+            flex-grow: 1;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .sidebar {
+            width: 200px;
+            background-color: grey;
+        }
+        
+        .news {
+            display: flex;
+            justify-content: center;
+        }
+        
+        .newslist {
+            line-height: 40px;
+            list-style-type: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="allpage">
+        <header class="header">
+            <nav>
+                <ul class="navigation">
+                    <li class="navigation_item">About</li>
+                    <li class="navigation_item">Products</li>
+                    <li class="navigation_item">Contacts</li>
+                </ul>
+            </nav>
+        </header>
+        <main class="content">
+            <section class="dashboard">
+                <h2>I can use Flexbox!!!</h2>
+            </section>
+            <aside class="sidebar">
+                <h2 class="news">News</h2>
+                <ul>
+                    <li class="newslist">News 1</li>
+                    <li class="newslist">News 2</li>
+                    <li class="newslist">News 3</li>
+                </ul>
+            </aside>
+        </main>
+        <footer class="footer"><span class="footer_text">Footer</span></footer>
+    </div>
+</body>
+
+</html>
