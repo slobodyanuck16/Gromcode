@@ -1,0 +1,70 @@
+* {
+    box-sizing: border-box;
+}
+
+.header {
+    height: 40px;
+    background-color: darkturquoise;
+    position: fixed;
+}
+
+.nav-item {
+    float: left;
+    margin-left: 16px;
+    color: white;
+    position: relative;
+    top: 50%;
+}
+
+.content {
+    background-color: beige;
+    height: 5000px;
+}
+
+.head {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+.ear_left {
+    bottom: 120px;
+    right: 40px;
+}
+
+.ear_right {
+    bottom: 60px;
+    left: 200px;
+}
+
+.ear {
+    width: 40px;
+    height: 60px;
+    background-color: brown;
+    position: relative;
+}
+
+.eye_left {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+    bottom: 80px;
+    left: 40px;
+    float: left;
+}
+
+.eye_right {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: grey;
+    position: relative;
+    bottom: 80px;
+    right: 40px;
+    float: right;
+}
