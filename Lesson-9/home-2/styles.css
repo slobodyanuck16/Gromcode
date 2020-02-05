@@ -61,7 +61,7 @@
     border-radius: 50%;
     background-color: grey;
     position: relative;
-    bottom: 80px;
+    bottom: 40px;
     left: 40px;
     float: left;
 }
@@ -72,7 +72,7 @@
     border-radius: 50%;
     background-color: grey;
     position: relative;
-    bottom: 80px;
+    bottom: 40px;
     right: 40px;
     float: right;
 }
