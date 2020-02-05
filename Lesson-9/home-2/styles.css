@@ -1,19 +1,20 @@
-* {
-    box-sizing: border-box;
-}
-
 .header {
     height: 40px;
+    width: 100%;
     background-color: darkturquoise;
     position: fixed;
+}
+
+.nav-list {
+    line-height: 40px;
+    margin: 0;
 }
 
 .nav-item {
     float: left;
     margin-left: 16px;
     color: white;
-    position: relative;
-    top: 50%;
+    list-style-type: none;
 }
 
 .content {
@@ -26,8 +27,8 @@
     height: 200px;
     background-color: aquamarine;
     position: relative;
-    top: 50%;
-    left: 50%;
+    top: calc(50% - 100px);
+    left: calc(50% - 100px);
 }
 
 .ear_left {
