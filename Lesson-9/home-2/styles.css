@@ -12,8 +12,8 @@
 
 .nav-item {
     float: left;
-    margin-left: 16px;
     color: white;
+    padding-left: 16px;
     list-style-type: none;
 }
 
