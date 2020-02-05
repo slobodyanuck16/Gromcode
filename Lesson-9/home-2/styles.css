@@ -15,10 +15,11 @@
 }
 
 .nav-item {
-    display: inline;
+    display: inline-block;
     color: white;
     margin-left: 16px;
     list-style-type: none;
+    height: 40px;
 }
 
 .content {
