@@ -7,21 +7,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha256-l85OmPOjvil/SOvVt3HnSSjzF1TUMyT9eV0c2BzEGzU=" crossorigin="anonymous" />
     <link rel="stylesheet" href="styles.css">
     <style>
-        * {
-            box-sizing: border-box;
-        }
-        
-        body {
-            position: absolute;
-        }
-        
         .maintext {
-            position: relative;
+            position: absolute;
             margin: 16px;
             border-bottom: 1px dotted black;
         }
         
         .tooltip {
+            position: relative;
+            bottom: -40px;
             background-color: grey;
             border-radius: 4px;
             padding: 8px;
@@ -30,8 +24,8 @@
             display: none;
         }
         
-        .maintext:hover .tooltip {
-            display: block;
+        body:hover .tooltip {
+            display: inline-block;
         }
     </style>
 </head>
