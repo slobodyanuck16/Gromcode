@@ -1,0 +1,12 @@
+.gallery {
+    display: flex;
+    overflow: auto;
+    flex-grow: 1;
+    flex-shrink: 1;
+    flex-wrap: 1;
+    cursor: all-scroll;
+}
+
+.thumb {
+    padding: 8px;
+}
