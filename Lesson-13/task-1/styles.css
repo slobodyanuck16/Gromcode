@@ -2,10 +2,6 @@
     box-sizing: border-box;
 }
 
-body {
-    padding-left: 50%;
-}
-
 div {
     height: 500px;
     width: 300px;
