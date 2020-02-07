@@ -1,5 +1,14 @@
-div {
+* {
+    box-sizing: border-box;
+}
+
+body {
+    padding-left: 40%;
+}
+
+.mountains {
     font-size: 32px;
+    padding: 32px;
     font-weight: 700;
     text-align: center;
     color: white;
@@ -7,4 +16,6 @@ div {
     width: 300px;
     background-image: url(nature.jpeg);
     background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
