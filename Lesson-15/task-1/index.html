@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        
+        .image-container {
+            display: block;
+            margin: 0px auto;
+            margin-top: 50px;
+            max-width: 100%;
+            border-radius: 20px;
+        }
+        
+        .gallery {
+            display: flex;
+            margin-top: 50px
+        }
+        
+        .card {
+            margin: 16px;
+            box-shadow: 0px 7px 18px -8px rgba(0, 0, 0, 0.75);
+        }
+        
+        .caption {
+            line-height: 30px;
+            text-align: center;
+        }
+        
+        .opacity {
+            filter: opacity(50%);
+        }
+        
+        .blur {
+            filter: blur(4px);
+        }
+        
+        .invert {
+            filter: invert(100%)
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img class="image-container" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/big.jpeg" alt="land with tree">
+    </div>
+    <div class="gallery">
+        <figure class="card">
+            <img class="opacity" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="mountain with opacity">
+            <figcaption class="caption">
+                opacity
+            </figcaption>
+        </figure>
+        <figure class="card">
+            <img class="blur" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="mountain with blur">
+            <figcaption class="caption">
+                blur
+            </figcaption>
+        </figure>
+        <figure class="card">
+            <img class="invert" src="https://gromcode.s3.eu-central-1.amazonaws.com/front-end/html-css/lesson15/task1/small.jpg" alt="mountain with invert">
+            <figcaption class="caption">
+                invert
+            </figcaption>
+        </figure>
+    </div>
+</body>
+
+</html>
