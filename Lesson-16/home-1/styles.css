@@ -26,12 +26,12 @@
     text-align: center;
 }
 
-.form-control {
-    padding-top: 8px;
+.form-input {
+    margin-bottom: 8px;
 }
 
 form-label {
-    margin-bottom: 4px
+    margin-top: 4px;
 }
 
 .form-input {
