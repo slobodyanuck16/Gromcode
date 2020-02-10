@@ -1,0 +1,22 @@
+* {
+    box-sizing: border-box;
+}
+
+.page {
+    background-color: bisque;
+    font-size: 16px;
+    font-family: monospace;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: auto;
+}
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+    background-color: aqua;
+    width: 300px;
+    padding: 16px;
+    box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
