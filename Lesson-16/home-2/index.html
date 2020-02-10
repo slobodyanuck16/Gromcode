@@ -56,22 +56,31 @@
             <input type="password" name="password" value="secret">
         </div>
         <div>
-            <label class="languages"><input type="radio" name="language">HTML</label>
-            <label class="languages"><input type="radio" name="language" checked>CSS</label>
-            <label class="languages"><input type="radio" name="language">JavaScript</label>
+            <input type="radio" id="language1" name="language">
+            <label class="languages" for="language1">HTML</label>
+            <input type="radio" id="language2" name="language" checked>
+            <label class="languages" for="language2">CSS</label>
+            <input type="radio" id="language3" name="language">
+            <label class="languages" for="language3">JavaScript</label>
         </div>
         <div>
             <input type="range" name="learningProgress" value="30">
         </div>
         <div>
             <select name="framework">
-                <option value="react">React</option>
                 <option value="jquery">jQuery</option>
+                <option value="react">React</option>
                 <option value="bootstrap">Bootstrap</option>
             </select>
         </div>
         <div>
-            <input type="search" name="search" placeholder="https://website.com" required>
+            <input type="search" name="search" placeholder="Type first letters...">
+        </div>
+        <div>
+            <input type="time" name="lunchEnd" value="14:01">
+        </div>
+        <div>
+            <input type="url" name="website" placeholder="https://website.com" required>
         </div>
         <div>
             <input type="week" name="birthWeek" value="2021-W51">
