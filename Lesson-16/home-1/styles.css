@@ -27,11 +27,11 @@
 }
 
 .form-control {
-    padding-bottom: 8px;
+    padding-top: 8px;
 }
 
 form-label {
-    padding-bottom: 4px
+    margin-bottom: 4px
 }
 
 .form-input {
