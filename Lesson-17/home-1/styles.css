@@ -20,18 +20,22 @@ th {
 
 .firstrow>td:nth-child(odd) {
     background-color: black;
+    border: 1px solid black;
 }
 
 .firstrow>td:first-child {
     background-color: white;
+    border: none;
 }
 
 .secondrow>td:nth-child(even) {
     background-color: black;
+    border: 1px solid black;
 }
 
 .secondrow>td:last-child {
     background-color: white;
+    border: none;
 }
 
 .firstrow>td:nth-of-type(2) {
