@@ -5,60 +5,7 @@
     <meta charset="UTF-8">
     <title>Images</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha256-WAgYcAck1C1/zEl5sBl5cfyhxtLgKGdpI3oKyJffVRI=" crossorigin="anonymous" />
-    <style>
-        .container {
-            display: flex;
-            width: 100%;
-            height: 100vh;
-            justify-content: center;
-            align-items: center;
-        }
-        
-        .spinner {
-            font-family: monospace;
-            font-size: 16px;
-            text-transform: uppercase;
-            animation: blinking 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        
-        .rect {
-            position: relative;
-            height: 10px;
-            width: 4px;
-            background-color: black;
-            border-radius: 2px;
-            animation: moving 2s;
-            animation-iteration-count: infinite;
-            animation-timing-function: linear;
-        }
-        
-        @keyframes moving {
-            0% {
-                left: 0;
-                opacity: 1;
-            }
-            50% {
-                left: 70px;
-            }
-            100% {
-                left: 0;
-            }
-        }
-        
-        @keyframes blinking {
-            0% {
-                opacity: 0;
-            }
-            50% {
-                opacity: 1;
-            }
-            100% {
-                opacity: 0;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
