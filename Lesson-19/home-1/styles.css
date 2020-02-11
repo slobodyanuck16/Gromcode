@@ -31,11 +31,8 @@
         left: 0;
         opacity: 1;
     }
-    50% {
-        left: 70px;
-    }
     100% {
-        left: 0;
+        left: 70px;
     }
 }
 
