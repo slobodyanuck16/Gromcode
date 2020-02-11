@@ -1,7 +1,7 @@
 .square {
     height: 100px;
     width: 100px;
-    background-color: aqua;
+    background-color: coral;
     position: absolute;
     animation: move 4s;
     animation-iteration-count: 4;
