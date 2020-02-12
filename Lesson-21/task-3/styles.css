@@ -1,3 +1,6 @@
+* {
+    box-sizing: border-box;
+}
 html {
     font-size: 18px;
 }
@@ -19,5 +22,5 @@ html {
 }
 
 .font-in-rem {
-    font-size: 1.5em;
+    font-size: 1.5rem;
 }
