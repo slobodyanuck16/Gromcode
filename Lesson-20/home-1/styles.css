@@ -16,7 +16,7 @@
             }
             
             .spinner-text {
-                animation: blinking 2s infinite;
+                animation: blinking 2s linear infinite;
             }
             
             .circle {
