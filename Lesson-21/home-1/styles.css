@@ -18,7 +18,7 @@ body {
     display: flex;
     flex-direction: column;
     height: 100vh;
-    width: 100%;
+    /* width: 100%; */
 }
 
 .main {
@@ -27,8 +27,7 @@ body {
 
 .navigation {
     width: 20%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0.5em;
 }
 
 .nav-list {
@@ -61,8 +60,7 @@ body {
 
 .section {
     width: 60%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0.5em;
     font-size: 1.25em;
 }
 
@@ -78,14 +76,13 @@ body {
 .css-units {
     color: #8b0000;
     background-color: #e5e5e5;
-    font-size: 125%;
+    font-size: 1.125em;
     font-weight: 700;
 }
 
 .news {
     width: 20%;
-    padding-left: 0.5em;
-    padding-right: 0.5em;
+    padding: 0.5em;
 }
 
 .footer {
