@@ -16,7 +16,7 @@
             }
             
             .spinner-text {
-                animation: blinking 1s linear infinite;
+                animation: blinking 2s linear infinite;
             }
             
             .circle {
@@ -32,13 +32,13 @@
             
             @keyframes blinking {
                 0% {
-                    opacity: 1;
-                }
-                50% {
                     opacity: 0;
                 }
-                100% {
+                50% {
                     opacity: 1;
+                }
+                100% {
+                    opacity: 0;
                 }
             }
             
