@@ -69,7 +69,7 @@ body {
     text-align: center;
 }
 
-.unit-list {
+.units-list {
     line-height: 1.75em;
 }
 
@@ -83,6 +83,10 @@ body {
 .news {
     width: 20%;
     padding: 0.5em;
+<<<<<<< HEAD
+=======
+
+>>>>>>> 7baa2f5859ba86259381a52812723e87542b12ca
 }
 
 .footer {
