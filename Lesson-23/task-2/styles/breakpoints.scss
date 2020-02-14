@@ -25,3 +25,14 @@ $lg: 1200px;
         @content;
     }
 }
+@mixin for-landscape {
+    @media (orientation:landscape) {
+        @content;
+    }
+}
+
+// @mixin for-portrait {
+//     @media (orientation:portrait) {
+//         @content;
+//     }
+// }

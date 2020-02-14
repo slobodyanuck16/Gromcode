@@ -5,10 +5,7 @@
 }
 
 .container {
-    @include for-large {
-        display: flex;
-    }
-    @include for-extra-large {
+    @include for-landscape {
         display: flex;
     }
 }
