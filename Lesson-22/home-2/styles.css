@@ -64,7 +64,11 @@ body {
 }
 
 .section {
+<<<<<<< HEAD
     width: 100%;
+=======
+    width: 60%;
+>>>>>>> 302dbe1f36996fbe777ec6bebb7352c1cdb733de
     padding: 0.5em;
     font-size: 1.25em;
 }
@@ -120,10 +124,10 @@ body {
     }
     .navigation {
         width: 100%;
+        padding-bottom: 0;
     }
     .section {
         width: 100%;
-        padding-top: 0;
     }
     .news {
         width: 100%;
