@@ -31,8 +31,8 @@ $lg: 1200px;
     }
 }
 
-// @mixin for-portrait {
-//     @media (orientation:portrait) {
-//         @content;
-//     }
-// }
+@mixin for-portrait {
+    @media (orientation:portrait) {
+        @content;
+    }
+}
