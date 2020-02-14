@@ -27,6 +27,7 @@
 }
 .menu__item_active {
   position: relative;
+  color: yellow;
 }
 .menu__item:hover .submenu {
   padding: 0;
