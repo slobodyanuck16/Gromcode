@@ -20,6 +20,7 @@
         height: 100%;
         display: flex;
         align-items: center;
+        color: white;
 
         &:hover {
             background-color: #9acd32;
@@ -27,7 +28,11 @@
         }
 
         &_active {
+<<<<<<< HEAD
             position: relative;  
+=======
+            position: relative;
+>>>>>>> f6f4f8e40a6fd7417edc71046858ddb0836e3a0c
             color: yellow;
         }
 
