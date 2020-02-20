@@ -1,6 +1,8 @@
-let sum = 1;
+let sum = 0;
+let result = 0;
+let n = 100;
 
-for (let n = 100; n <= 200; n++) {
-    sum += n;
+for (let a = 1; a <= n; a++) {
+    sum += a;
 }
 console.log('Result: ' + sum);
