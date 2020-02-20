@@ -6,4 +6,4 @@ for (let i = m; i <= n; i++) {
         result += i;
     }
 }
-console.log('Result: ' + result);
+console.log("Result: " + result);
