@@ -4,4 +4,4 @@ for (i = String (1); i <= n; i++) {
     sum += i;
 }
 
-console.log(sum);
+console.log("result: " + sum);
