@@ -4,4 +4,4 @@ for (i = 1; i <= n; i++) {
     sum += i;
 }
 
-console.log('Result: ' + sum);
+console.log('Result: ', sum);
