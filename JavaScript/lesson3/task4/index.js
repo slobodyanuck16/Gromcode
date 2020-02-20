@@ -7,7 +7,7 @@ false || false || false; console.log("false || false || false: ", false || false
 /* оператор && (AND) */
 false && true; console.log("false && true: ", false && true);
 false && true && false; console.log("false && true && false: ", false && true && false);
-true && true && true; console.log("false && false && false: ", false && false && false);
+true && true && true; console.log("true && true && true: ", true && true && true);
 
 
 /* Логические операторы могут применятся к любым типам данных */
@@ -21,7 +21,7 @@ undefined || null || 0 || '' || null; console.log("undefined || null || 0 || '' 
 const customAmount = null; // не выводим
 const defaultAmount = 17; // не выводим
 const amount = customAmount || defaultAmount; // выводим значкние переменной amount в формате console.log('amount: ', amount);
-console.log("customAmount || defaultAmount: ", customAmount || defaultAmount);
+console.log("amount: ", amount);
 
 /* && находит первое ложное значение */
 'text' && false; console.log("'text' && false: ", 'text' && false);
