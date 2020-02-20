@@ -20,8 +20,9 @@ undefined + '5'; console.log("undefined + '5': ", undefined + '5');
 let num = 17;
 
 // Постфиксная и префиксная форма записи
-++num;
-num++;
+let num = 17;
+++num; console.log("++num: ", ++num);
+num++; console.log("--num: ", --num);
 
 
 // математические операторы приводят операнды к числам
