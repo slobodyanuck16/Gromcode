@@ -1,7 +1,7 @@
 let m = 1;
-const n = 20;
+const n = 50;
 let result = 0;
-do {
+for (i = m; m <= n; m++) {
     if (m % 2 === 0) {
         result += m;
     }
@@ -14,5 +14,4 @@ do {
     if (m % 5 === 0) {
         console.log(m);
     }
-    m++;
-} while (m <= n);
+}
