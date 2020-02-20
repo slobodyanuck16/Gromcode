@@ -1,7 +1,7 @@
-let n = 7;
-let sum = '';
-for (i = 1; i <= n; i++) {
+const n = 10;
+let sum = String();
+for (let i = 1; i <= n; i++) {
     sum += i;
 }
+console.log(sum);
 
-console.log('Result: ', sum);
