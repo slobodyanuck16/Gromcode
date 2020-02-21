@@ -6,5 +6,5 @@ function getSum (first, second) {
         }
         first++;
     } while (first <= second);
-    console.log(sum);
+    return console.log(sum);
 }
