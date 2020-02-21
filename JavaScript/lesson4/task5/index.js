@@ -5,10 +5,10 @@ for (let i = m; i <= n; i++) {
     if (i % 2 === 0) {
         result += i;
     }
-    if (i % 3 === 0) {
+    else if (i % 3 === 0) {
         result = result - i;
     }
-    if (i % 4 === 0) {
+    else if (i % 4 === 0) {
         result = result * i;
     }
     if (i % 5 === 0) {
