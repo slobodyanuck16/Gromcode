@@ -1,8 +1,10 @@
 function findDivCount(a,b,n) {
+    let quan = 0;
     do {
         if (a % n === 0) {
-            console.log(a);    
+            quan = quan + 1;
         }
         a++;
-    } while (a<=b)
+    } while (a<=b);
+    console.log(quan);
 }
