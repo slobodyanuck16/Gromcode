@@ -1,8 +1,10 @@
-function getPrimes(i, n) {
-    do {
-        if ((i % 1 === 0) && (i % i === 0) && (i != 1)) {
-            console.log(i);
+function getPrimes(n) {
+    nextPrime: for (let i = 2; i <= n; i++) {
+
+        for (let j = 2; j < i; j++) {
+            if (i % j === 0) continue nextPrime;
         }
-        i++;
-    } while (i <= n);
+        console.log(i);
+    }
+
 }
