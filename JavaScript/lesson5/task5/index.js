@@ -3,8 +3,9 @@ function getSum (first, second) {
     do {
         if (first % 2 === 0) {
             sum = sum + first;
+            console.log(sum);
         }
         first++;
     } while (first <= second);
-    return console.log(sum);
+    return (sum);
 }
