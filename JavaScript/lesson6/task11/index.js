@@ -1,9 +1,9 @@
 function checker(arr) {
-    arr.sort();
-    if (arr[0] + arr[arr.length - 1] > 1000) {
-        return true;
-    }
-    else {
-        return false;
+    let max = Math.max(...arr)
+    let min = Math.min(...arr)
+    if ((max + min) > 1000) {
+        return true
+    } else {
+        return false
     }
 }
