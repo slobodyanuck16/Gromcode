@@ -1,5 +1,6 @@
+let arr = [];
 function cloneArr (arr) {
     let newArr = [];
-    arr = newArr;
+    newArr = arr;
     return newArr;
 }
