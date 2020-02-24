@@ -1,13 +1,12 @@
-const numbers = [3, 4, 5, 6, 7, 8];
+const arr = [3, 4, 5, 6, 7, 8];
 
-function squareArray(numbers) {
-    let sumOfNumbers = [];
-    for (let i = [0]; i < numbers.length; i++) {
-        sumOfNumbers += (numbers[i] * numbers[i]);
-        console.log(sumOfNumbers);
-    if (!Array.isArray(numbers)) {
+function squareArray(arr) {
+    let array = [];
+    for (let i = 0; i < arr.length; i++) {
+        array.push(arr[i] * arr[i]);
+    if (!Array.isArray(arr)) {
             return null;
         }
     }
-    return sumOfNumbers;
+    return array;
 }
