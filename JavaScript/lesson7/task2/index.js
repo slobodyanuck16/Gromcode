@@ -1,2 +1,2 @@
-const sortArray = numbers =>
+const sortDesc = numbers =>
     numbers.slice().sort((a,b) => b - a);
