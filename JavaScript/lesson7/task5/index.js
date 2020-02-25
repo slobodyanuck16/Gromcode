@@ -1,10 +1,14 @@
-function squareArray(arr) {
+const squareArray = numbers => {
     let array = [];
-    for (let i = 0; i < arr.length; i++) {
-        array.push(arr[i] * arr[i]);
-    if (!Array.isArray(arr)) {
-            return null;
+    
+    function checkArray(num) {
+        if (Array.isArray(arr)) {
+            array.push(num * num);
         }
+        else { return null }
     }
-    return array;
+    numbers.forEach(checkArray);
+        return array;
 }
+const arr = [2,4,5,6,7];
+console.log(squareArray(arr));
