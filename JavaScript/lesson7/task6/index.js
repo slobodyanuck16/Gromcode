@@ -1,7 +1,7 @@
 function reverseArray(arr) {
-    let newArr = [];
+    let newArr = []
     if (Array.isArray(arr)) {
-        newArr = arr.reverse();
+        newArr = arr.slice().reverse();
     } else {
         return null;
     }
