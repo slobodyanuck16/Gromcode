@@ -1,14 +1,20 @@
+// function squareArray (arr) {
+//     arr.map(num => arr[num] * arr[num]);
+//     return arr;
+// }
+// const arr = [2, 4, 5, 6, 7];
+// console.log(squareArray(arr));
+
 const squareArray = numbers => {
     let array = [];
-    
-    function checkArray(num) {
+    numbers.slice().filter(num => {
         if (Array.isArray(arr)) {
             array.push(num * num);
+        } else {
+            return null;
         }
-        else { return null }
-    }
-    numbers.forEach(checkArray);
-        return array;
+    });
+    return array;
 }
-const arr = [2,4,5,6,7];
+const arr = [2, 4, 5, 6, 7];
 console.log(squareArray(arr));
