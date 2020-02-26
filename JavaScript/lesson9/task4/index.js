@@ -18,7 +18,7 @@ const obj = {
         { name: 'room3 name4' },
     ],
 }
-const transformToObject = obj =>
+const getPeople = obj =>
     Object.values(obj).flat().map(el => el.name);
 
 console.log(transformToObject(obj));
