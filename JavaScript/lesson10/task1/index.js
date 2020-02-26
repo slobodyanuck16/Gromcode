@@ -1,22 +1,19 @@
-function getFiniteNumbers (arr) {
-    const newArr = Number.isFinite(arr);
-    return newArr;
+function getFiniteNumbers(num) {
+    return num.filter(item => Number.isFinite(item))
 }
-function getFiniteNumbersV2 (arr) {
-    const newArr = isFinite(arr);
-    return newArr;
+
+function getFiniteNumbersV2(num) {
+    return num.filter(item => isFinite(item))
 }
-function getNaN (arr) {
-    const newArr = Number.isNaN(arr);
-    return newArr;
+
+function getNaN(num) {
+    return num.filter(item => Number.isNaN(item))
 }
-function getNaNV2 (arr) {
-    const newArr = isNaN(arr);
-    return newArr;
+
+function getNaNV2(num) {
+    return num.filter(item => isNaN(item))
 }
-function getIntegers (arr) {
-    const newArr = Number.isInteger(arr);
-    return newArr;
+
+function getIntegers(num) {
+    return num.filter(item => Number.isInteger(item))
 }
-console.log(Number.isNan(arr) == isNaN(arr));
-console.log(Number.isFinite(arr) == isFinite(arr));

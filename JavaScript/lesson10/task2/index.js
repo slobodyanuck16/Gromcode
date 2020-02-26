@@ -1,18 +1,15 @@
-function getParsedIntegers (arr) {
-    const newArr = Number.parseInt(arr);
-    return newArr;
+function getParsedIntegers(arr) {
+    return arr.map(item => Number.parseInt(item))
 }
-function getParsedIntegersV2 (arr) {
-    const newArr = parseInt(arr);
-    return newArr;
+
+function getParsedIntegersV2(arr) {
+    return arr.map(item => parseInt(item))
 }
-function getParsedFloats (arr) {
-    const newArr = Number.parseFloat(arr);
-    return newArr;
+
+function getParsedFloats(arr) {
+    return arr.map(item => Number.parseFloat(item))
 }
-function getParsedFloatsV2 (arr) {
-    const newArr = parseFloat(arr);
-    return newArr;
+
+function getParsedFloatsV2(arr) {
+    return arr.map(item => parseFloat(item))
 }
-console.log(Number.parseInt(arr) == parseInt(arr));
-console.log(Number.parseFloat(arr) == parseFloat(arr));
