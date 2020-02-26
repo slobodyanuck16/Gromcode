@@ -20,5 +20,3 @@ const obj = {
 }
 const getPeople = obj =>
     Object.values(obj).flat().map(el => el.name);
-
-console.log(transformToObject(obj));
