@@ -15,8 +15,8 @@ function getNaNV2 (arr) {
     return newArr;
 }
 function getIntegers (arr) {
-    const newArr = isInteger(arr);
+    const newArr = Number.isInteger(arr);
     return newArr;
 }
-console.log(Number.isNan == isNan);
-console.log(Number.isFinite == isFinite);
+console.log(Number.isNan(arr) == isNaN(arr));
+console.log(Number.isFinite(arr) == isFinite(arr));
