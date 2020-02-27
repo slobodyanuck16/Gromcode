@@ -1,9 +1,6 @@
-const getRandomNumbers = (integer, begin, end) => {
-    const wrongNum = (end - begin < 1) && Math.ceil(end) === Math.ceil(begin);
-    if (begin > end || wrongNum) return null;
-    return Array(integer)
-        .fill().map(el => Math.trunc(Math.random() * (end - begin)) + end);
-
-
-
-}
+const getRandomNumbers = (lenght, start, end) => {
+    const wrongNum = (start < end) && Math.ceil(end) === Math.ceil(start);
+    if (start > end || wrongNum) return null;
+    return Array(length).fill().map(num =>
+        Math.floor(Math.random() * (start - end + 1) + end));
+};
