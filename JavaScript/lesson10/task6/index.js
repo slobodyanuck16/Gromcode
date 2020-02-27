@@ -1,24 +1,10 @@
-const obj = {
-    room1: [
-        { name: 'room1 name1' },
-        { name: 'room1 name2' },
-        { name: 'room1 name3' },
-        { name: 'room1 name4' },
-    ],
-    room2: [
-        { name: 'room2 name1' },
-        { name: 'room2 name2' },
-        { name: 'room2 name3' },
-        { name: 'room2 name4' },
-    ],
-    room3: [
-        { name: 'room3 name1' },
-        { name: 'room3 name2' },
-        { name: 'room3 name3' },
-        { name: 'room3 name4' },
-    ],
-}
-const getPeople = obj =>
-    Object.values(obj).flat().map(el => el.name);
+let lenght = 20;
+let start = 1;
+let end = 20;
 
-console.log(transformToObject(obj));
+const getRandomNumbers = (lenght, start, end) => {
+    // const wrongNum = (start < end) && Math.ceil(end) === Math.ceil(start);
+    if (start > end) return null;
+    return Array(lenght)
+        .fill().map(el => Math.trunc(Math.random() * lenght));
+}
