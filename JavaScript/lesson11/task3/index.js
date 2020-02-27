@@ -23,3 +23,23 @@ const splitString = (text, len) => {
     return strArr;
 }
 console.log(splitString('asvsadsafsagsagsafsa',4));
+  
+// const splitString = (str, num = 10) => {
+
+//     if (typeof str !== 'string') return null;
+
+//     const resultArray = [];
+//     let startPosition = 0;
+
+//     while (true) {
+//         let chank = str.substr(startPosition, num);
+//         if (chank.length === 0) break;
+//         if (chank.length < num) {
+//             chank = chank + '.'.repeat(num - chank.length);
+//         }
+//         resultArray.push(chank);
+//         startPosition += num;
+//     }
+
+//     return resultArray;
+// }
