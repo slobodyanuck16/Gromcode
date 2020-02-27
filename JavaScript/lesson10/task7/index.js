@@ -1,8 +1,13 @@
-function superRound (num,round) {
-    let arr = [Math.floor(num * (round * Math.pow(10, round))) / (round * Math.pow(10, round)),
-    Math.round(num * (round * Math.pow(10, round))) / (round * Math.pow(10, round)),
-    Math.ceil(num * (round * Math.pow(10, round))) / (round * Math.pow(10, round)),
-    Math.trunc(num * (round * Math.pow(10, round))) / (round * Math.pow(10, round)),
-    num.toFixed(round)]
-    return arr;
+// let num = -4.214153262463253;
+// let round = 5;
+
+const superRound = (num, round) => {
+    let factor = Math.pow(10, round)
+    return [
+        Math.floor(num * factor) / factor,
+        Math.round(num * factor) / factor,
+        Math.ceil(num * factor) / factor,
+        Math.trunc(num * factor) / factor, 
+        +num.toFixed(round)
+    ]
 };
