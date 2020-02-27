@@ -1,5 +1,6 @@
 const splitString = (text, len) => {
     const strArr = [];
+    
     if (text === !(String)) {
         return null;
     }
@@ -11,14 +12,14 @@ const splitString = (text, len) => {
             break;
         }
         if (len === undefined) {
-            strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+            strArr.push(chunk.slice(0));
             startPosition += 10;
         } else {
-            strArr.push((chunk[0].toUpperCase()) + chunk.slice(1));
+            strArr.push(chunk.slice(0));
             startPosition += len;
         }
-
     }
-    return strArr.join('.\n');
+
+    return strArr;
 }
-console.log(splitString('21312412412512512522222222222',4));
+console.log(splitString('asvsadsafsagsagsafsa',4));
