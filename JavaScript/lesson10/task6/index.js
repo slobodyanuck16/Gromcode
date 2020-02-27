@@ -6,5 +6,5 @@ const getRandomNumbers = (lenght, start, end) => {
     const wrongNum = (start < end) && Math.ceil(end) === Math.ceil(start);
     if (start > end || wrongNum) return null;
     return Array(lenght)
-    .fill().map(el => Math.trunc(Math.random() * (end - start)) + end);
+        .fill().map(el => Math.trunc(Math.random() * end));
 }
