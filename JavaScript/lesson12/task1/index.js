@@ -3,7 +3,7 @@ const calc = expression => {
     let result;
     switch (operator) {
         case '+':
-            result = a + b;
+            result = a + +b;
             break;
         case '-':
             result = a - b;
