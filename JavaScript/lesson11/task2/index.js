@@ -18,12 +18,14 @@ let contacts = [{
 ]
 
 const sortContacts = (contacts, bool) => {
+    if (!Array.isArray(contacts)) {
+        return null;
+    }
     const result = contacts
-    if (bool == true) {
-        contacts.sort((a, b) => {
+    .sort((a, b) => {
             return a.name.localeCompare(b.name);
         });
-    } else {
+    if (bool == false) {
         contacts.sort((a, b) => {
             return b.name.localeCompare(a.name);
         });
