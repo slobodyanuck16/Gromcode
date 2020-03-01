@@ -1,0 +1,27 @@
+{
+  "name": "Gromcode",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^25.1.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.8.6",
+    "@babel/preset-env": "^7.8.6"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slobodyanuck16/Gromcode.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slobodyanuck16/Gromcode/issues"
+  },
+  "homepage": "https://github.com/slobodyanuck16/Gromcode#readme",
+  "description": ""
+}
