@@ -29,9 +29,9 @@ function createLogger() {
 
     function getRecords(type) {
         if (type != undefined) {
-                return memo.filter(item => item.type === type).sort((a, b) => b.dateTime > a.dateTime); 
+                return memo.filter(item => item.type === type).sort((a, b, c) => a.dateTime < b.dateTime < c.dateTime); 
             } else {
-                return memo.sort((a, b) => b.dateTime > a.dateTime);
+                return memo.sort((a, b, c) => c.dateTime > b.dateTime > a.dateTime);
             }
     }
     return {
