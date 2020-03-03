@@ -29,7 +29,7 @@ function createLogger() {
 
     function getRecords(type) {
         if (type != undefined) {
-                return memo.filter(item => item.logType === type).sort((a, b) => b.dateTime - a.dateTime);
+                return memo.filter(item => item.logType() === type).sort((a, b) => b.dateTime > a.dateTime);
             } else {
                 return memo.sort((a, b) => b.dateTime > a.dateTime);
             }
