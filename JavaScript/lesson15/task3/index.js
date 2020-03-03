@@ -29,10 +29,10 @@ function createLogger() {
 
     function getRecords(type) {
         if (type != undefined) {
-                return memo.filter(item => item.type === type).sort((a, b, c) => a.dateTime < b.dateTime < c.dateTime); 
-            } else {
-                return memo.sort((a, b, c) => c.dateTime > b.dateTime > a.dateTime);
-            }
+            return logger.filter(item => item.logType === type).sort((a, b) => a.dateTime - b.dateTime);
+        } else {
+            return memo.sort((a, b) => a.dateTime < b.dateTime);
+        }
     }
     return {
         warn,
