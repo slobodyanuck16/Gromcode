@@ -31,18 +31,9 @@ export function createLogger() {
     };
 
     function getRecords(type) {
-<<<<<<< HEAD
         return loggerArr.sort((acc, rec) => (acc.dateTime > rec.dateTime));
     };
 
-=======
-        if (type != undefined) {
-            return logger.filter(item => item.type === type).sort((a, b) => a.dateTime < b.dateTime);
-        } else {
-            return memo.sort((a, b) => a.dateTime < b.dateTime);
-        }
-    }
->>>>>>> 075e6d2a61ff3b68c4f57b90dcd6807b0c86686a
     return {
         warn,
         error,
