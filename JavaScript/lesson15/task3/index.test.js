@@ -11,7 +11,7 @@ it('should get type === "error"', () => {
 it('should get type === "error"', () => {
     const logger = createLogger();
     logger.error('log');
-    const result = logger.getRecords('log');
+    const result = logger.getRecords('log')[0].type;
 
     expect(result).toEqual('log');
 })
