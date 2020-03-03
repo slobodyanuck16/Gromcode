@@ -1,40 +1,45 @@
 function createLogger() {
 
-    let message;
-    let dateTime;
-    let type;
+    let memo = [];
 
     function warn(text) {
-
-        message = text;
-        dateTime = Date();
-        type = 'warn';
-    };
+        memo.push({
+            message: text,
+            dateTime: new Date(),
+            type: 'warn',
+        })
+    }
 
     function error(text) {
-
-        message = text;
-        dateTime = Date();
-        type = 'error';
-    };
+        memo.push({
+            message: text,
+            dateTime: new Date(),
+            type: 'error',
+        })
+    }
 
     function log(text) {
+        memo.push({
+            message: text,
+            dateTime: new Date(),
+            type: 'log',
+        })
+    }
 
-        message = text;
-        dateTime = Date();
-        type = 'log';
-    };
 
-    function getRecords() {
-        return `{ message: ${message}, dateTime: ${dateTime}, type: ${type} }`;
-    };
-
+    function getRecords(type) {
+        if (type != undefined) {
+            return logger.filter(item => item.type === type).sort((a, b) => a.dateTime < b.dateTime);
+        } else {
+            return memo.sort((a, b) => a.dateTime < b.dateTime);
+        }
+    }
     return {
         warn,
         error,
         log,
         getRecords,
     }
-};
+}
 
-const logger = createLogger();
+export { createLogger }
