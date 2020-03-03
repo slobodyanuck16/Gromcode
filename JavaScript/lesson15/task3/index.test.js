@@ -1,11 +1,10 @@
   
 import { createLogger } from './index';
 
-it('should ', () => {
-    const log = createLogger();
-    let logger = []
-    let result = logger;
+it('should get type === "error"', () => {
+    const logger = createLogger();
+    logger.error('error');
+    const result = logger.getRecords('error')[0].type;
 
-    expect(result).toEqual([]);
-});
-
+    expect(result).toEqual('error');
+})
