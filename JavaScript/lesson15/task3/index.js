@@ -29,7 +29,7 @@ function createLogger() {
 
     function getRecords(type) {
         if (type != undefined) {
-            return memo.filter(item => item.type === type).sort((a, b) => a < b);
+            return memo.filter(item => item.type === type).sort((a, b) => a.message < b.message);
         } else {
             return memo.sort((a, b) => a.dateTime < b.dateTime);
         }
