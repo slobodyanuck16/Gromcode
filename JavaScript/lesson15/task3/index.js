@@ -29,15 +29,11 @@ function createLogger() {
 
     function getRecords(type) {
         if (type != undefined) {
-                return memo.filter(item => item.logType === type).sort((a, b) => a.dateTime - b.dateTime);
+                return memo.filter(item => item.logType === type).sort((a, b) => b.dateTime - a.dateTime);
             } else {
-                return memo.sort((a, b) => a.dateTime > b.dateTime);
+                return memo.sort((a, b) => b.dateTime > a.dateTime);
             }
-
-        
     }
-
-
     return {
         warn,
         error,
