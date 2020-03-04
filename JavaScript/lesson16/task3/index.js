@@ -11,4 +11,4 @@ function createArrayOfFunctions(num) {
 }
 console.log(createArrayOfFunctions(5));
 
-// export { createArrayOfFunctions }
+export { createArrayOfFunctions }
