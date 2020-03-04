@@ -5,6 +5,5 @@ for(let i = 0; i < 10; i++) {
         return i;
     }
 }
-console.log(arr[2]());
 
-// export { arr };
+export { arr };
