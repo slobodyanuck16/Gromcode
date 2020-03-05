@@ -3,3 +3,5 @@ function defer (func,ms) {
         setTimeout(() => func(this, ...arguments),ms);
     }
 }
+
+export { defer };
