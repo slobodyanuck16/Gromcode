@@ -6,4 +6,4 @@ const user = {
     }
 };
 
-export default user;
+export {user};
