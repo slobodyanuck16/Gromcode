@@ -9,7 +9,7 @@ const event = {
             .filter(({ age }) => age >= 18)
             .map(({ name, email }) => ({
                 email,
-                text: `Dear ${name}! ${this.message}`,
+                text: `email: ${email}, message: Dear ${name}! ${this.message}`,
             }));
     }
 }
