@@ -12,10 +12,10 @@ const ship = {
     __proto__:vehicle,
     startMachine() {
         console.log(`${this.name} lifting anchor up`);
-        vehilce.move();
+        ship.move();
     },
     stopMachine() {
-        vehicle.stop();
+        ship.stop();
         console.log(`${this.name} lifting anchor down`);
     },
 };
