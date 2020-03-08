@@ -1,4 +1,4 @@
-function spy (func) {
+function saveCalls (func) {
     function arg() {
         arg.calls.push([...arguments])
         return func.apply(this, arguments)
@@ -7,4 +7,4 @@ function spy (func) {
     return arg;
 }
 
-export { spy };
+export { saveCalls };
