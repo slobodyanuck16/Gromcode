@@ -4,8 +4,8 @@ const user = {
     get fullName() {
         return `${this.firstName} ${this.lastName}`;
     },
-    setFullName(fullName) {
-        const [firstName, lastName] = fullName.split(' ');
+    set fullName(value) {
+        const [firstName, lastName] = value.split(' ');
         this.firstName = firstName;
         this.lastName = lastName;
     },
