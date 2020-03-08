@@ -9,13 +9,13 @@ const vehicle = {
 };
 
 const ship = {
-    __proto__:vehile,
+    __proto__:vehicle,
     startMachine() {
         console.log(`${this.name} lifting anchor up`);
-        vehile.move();
+        vehilce.move();
     },
     stopMachine() {
-        vehile.stop();
+        vehicle.stop();
         console.log(`${this.name} lifting anchor down`);
     },
 };
