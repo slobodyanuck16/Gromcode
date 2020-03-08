@@ -1,4 +1,5 @@
-const vehile = {
+const vehicle = {
+    name: 'Argo',
     move() {
         console.log(`${this.name} is moving`);
     },
@@ -8,8 +9,7 @@ const vehile = {
 };
 
 const ship = {
-    name: 'Argo',
-    hasWheels: false,
+    __proto__:vehile,
     startMachine() {
         console.log(`${this.name} lifting anchor up`);
         vehile.move();
@@ -18,7 +18,6 @@ const ship = {
         vehile.stop();
         console.log(`${this.name} lifting anchor down`);
     },
-    __proto__:vehile
 };
 
-export { vehile, ship };
+export { vehicle, ship };
