@@ -1,16 +1,29 @@
-// function getOwnProps (obj) {
-//     const arr = [];
-//     arr.push(Object.keys(obj));
-//     return arr;
-// }
-function getOwnProps (obj) {
-    const arr = [];
-    for (let prop in obj) {
-        if (obj.hasOwnProperty(prop) && typeof obj[prop] !== 'function') {
-            arr.push(prop)
-        }
+class Vehicle {
+    constructor (name, numberOfWheels) {
+        this.name = name;
+        this.numberOfWheels = numberOfWheels;
     }
-    return arr;
-}
+    move() {
+        console.log(`${this.name} is moving`);
+    }
+    stop() {
+        console.log(`${this.name} stopped`);
+    }
+};
 
-export {getOwnProps};
+class Ship extends Vehicle {
+    constructor(maxSpeed) {
+        super('Agro', 0)
+        this.maxSpeed = maxSpeed;
+    }
+    move() {
+        console.log(`${this.name} lifting anchor up`);
+        Vehicle.move();
+    }
+    stop() {
+        Vehicle.stop();
+        console.log(`${this.name} lifting anchor down`);
+    }
+};
+
+export { Vehicle, Ship };
