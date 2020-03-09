@@ -18,10 +18,10 @@ class Ship extends Vehicle {
     }
     move() {
         console.log(`${this.name} lifting anchor up`);
-        Vehicle.move();
+        super.move();
     }
     stop() {
-        Vehicle.stop();
+        super.stop();
         console.log(`${this.name} lifting anchor down`);
     }
 };
