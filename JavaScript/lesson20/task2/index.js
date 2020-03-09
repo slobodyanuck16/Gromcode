@@ -9,11 +9,11 @@ class Vehicle {
     stop() {
         console.log(`${this.name} stopped`);
     }
-};
+}
 
 class Ship extends Vehicle {
-    constructor(maxSpeed) {
-        super('Agro', 0)
+    constructor(name, numberOfWheels, maxSpeed) {
+        super(name, numberOfWheels)
         this.maxSpeed = maxSpeed;
     }
     move() {
@@ -24,6 +24,6 @@ class Ship extends Vehicle {
         super.stop();
         console.log(`${this.name} lifting anchor down`);
     }
-};
+}
 
-export { Vehicle, Ship };
+export { Vehicle, Ship }
