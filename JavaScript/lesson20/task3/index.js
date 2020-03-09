@@ -16,4 +16,4 @@ class Wallet {
     }
 }
 
-export { Walet };
+export { Wallet };
