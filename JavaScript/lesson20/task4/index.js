@@ -1,34 +1,28 @@
 class Order {
-    id = Math.random(id) + '';
-    price = new Number();
-    dateCreated = new Date();
-    isConfirmed = new Boolean();
-    dateConfirmed = new Date();
-    city = new String();
-    type = new String();
     constructor(price, city, type) {
-        this.price = price
-        this.city = city
-        this.type = type
+        this.id = `${Math.random()}`;
+        this.price = price;
+        this.dateCreated = new Date();
+        this.isConfirmed = false;
+        this.dateConfirmed = null;
+        this.city = city;
+        this.type = type;
     }
 
     checkPrice() {
         if (this.price > 1000) {
             return true;
-        }
-        else return false;
+        } else return false;
     }
 
     confirmOrder() {
         this.isConfirmed = true;
-        this.dateConfirmed = new Date(now);
+        this.dateConfirmed = new Date();
     }
     isValidType() {
-        if (this.type === 'Buy') {
-            return false;
-        }
-        if (this.type === 'Sell') {
-            return true;
-        }
+        if (this.type === 'Buy' || this.type === 'Sell') return true;
+        else return false;
     }
 }
+
+export { Order }
