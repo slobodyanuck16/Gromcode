@@ -40,3 +40,5 @@ class UserRepository {
         }
     }
 }
+
+export { User, UserRepository }
