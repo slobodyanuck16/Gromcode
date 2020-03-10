@@ -1,21 +1,34 @@
-function User(name,age) {
-    this.name = name;
-    this.age = age;
+class Order {
+    id = Math.random(id) + '';
+    price = new Number();
+    dateCreated = new Date();
+    isConfirmed = new Boolean();
+    dateConfirmed = new Date();
+    city = new String();
+    type = new String();
+    constructor(price, city, type) {
+        this.price = price
+        this.city = city
+        this.type = type
+    }
+
+    checkPrice() {
+        if (this.price > 1000) {
+            return true;
+        }
+        else return false;
+    }
+
+    confirmOrder() {
+        this.isConfirmed = true;
+        this.dateConfirmed = new Date(now);
+    }
+    isValidType() {
+        if (this.type === 'Buy') {
+            return false;
+        }
+        if (this.type === 'Sell') {
+            return true;
+        }
+    }
 }
-
-User.prototype.sayHi = function() {
-    console.log(`Hi, I am ${this.name}`);
-}
-User.prototype.requestNewPhoto = function() {
-    console.log(`New photo request was sent for ${this.name}`);
-}
-User.prototype.setAge = function(age) {
-    if (age < 0) return false;
-    this.age = age;
-    if (age >= 25) console.log(`New photo request was sent for ${this.name}`);
-    return age;
-};
-
-
-
-export { User }
