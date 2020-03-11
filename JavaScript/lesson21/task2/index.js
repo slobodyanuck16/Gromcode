@@ -9,4 +9,4 @@ function getInputElement () {
     return inputElem;
 }
 
-export default { getTitleElement, getInputElement }
+export { getTitleElement, getInputElement }
