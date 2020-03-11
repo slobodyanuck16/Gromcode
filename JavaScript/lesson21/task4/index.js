@@ -1,6 +1,21 @@
-function setTitle(text) {
-    const content = document.querySelector('.title')
-    content.textContent(text);
+function getTitle() {
+    const titleElement = document.querySelector('.title');
+    return titleElement.textContent;
 }
 
-export { setTitle }
+function getDescription() {
+    const aboutElement = document.querySelector('.about');
+    return aboutElement.innerText;
+}
+
+function getPlans() {
+    const plansElement = document.querySelector('.plans');
+    return plansElement.innerHTML;
+}
+
+function getGoal() {
+    const goalElement = document.querySelector('.goal');
+    return goalElement.outerHTML;
+}
+
+export { getTitle, getDescription, getPlans, getGoal };
