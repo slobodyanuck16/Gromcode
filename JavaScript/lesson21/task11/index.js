@@ -10,7 +10,7 @@ function manageClasses() {
 
     const fourLi = document.querySelector('.four')
     if (document.getElementsByTagName('some-klass')) {
-        fourLi.classList.add('another_class');
+        fourLi.classList.add('another-class');
     }
 };
 
