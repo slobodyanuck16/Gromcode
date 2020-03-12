@@ -16,8 +16,8 @@ function finishList() {
     li8.textContent = '8';
 
     list.prepend(li1);
-    special.before(li4)
-    special.after(li6)
+    special.before(li4);
+    special.after(li6);
     list.append(li8);
 
 };

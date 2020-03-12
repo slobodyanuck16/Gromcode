@@ -1,4 +1,4 @@
-function manageClasses () {
+function manageClasses() {
     const oneLi = document.querySelector('.one')
     oneLi.classList.add('selected');
 
@@ -9,7 +9,10 @@ function manageClasses () {
     threeLi.classList.remove('three_done');
 
     const fourLi = document.querySelector('.four')
-    fourLi.classList.add('another_class');
+    if (document.getElementsByTagName('some-klass')) {
+        fourLi.classList.add('another_class');
+    }
 };
+manageClasses()
 
-export {manageClasses}
+export { manageClasses }
