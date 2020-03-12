@@ -13,6 +13,5 @@ function manageClasses() {
         fourLi.classList.add('another_class');
     }
 };
-manageClasses()
 
 export { manageClasses }
