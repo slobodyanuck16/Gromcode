@@ -5,19 +5,19 @@ function finishList() {
     const li1 = document.createElement('li');
     li1.textContent = '1';
 
-    const li3 = document.createElement('li');
-    li3.textContent = '3';
+    const li4 = document.createElement('li');
+    li4.textContent = '4';
 
 
-    const li5 = document.createElement('li');
-    li5.textContent = '5';
+    const li6 = document.createElement('li');
+    li6.textContent = '6';
 
     const li8 = document.createElement('li');
     li8.textContent = '8';
 
     list.prepend(li1);
-    special.before(li3)
-    special.after(li5)
+    special.before(li4)
+    special.after(li6)
     list.append(li8);
 
 };

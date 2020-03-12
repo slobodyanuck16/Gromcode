@@ -11,3 +11,5 @@ function manageClasses () {
     const fourLi = document.querySelector('.four')
     fourLi.classList.add('another_class');
 };
+
+export {manageClasses}
