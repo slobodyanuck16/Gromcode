@@ -21,5 +21,12 @@ const mergeObjectsV3 = (obj1, obj2) => {
 };
 
 
-const mergeObjectsV4 = (obj1, obj2) =>
-    Object.assign({}, ...obj1, ...obj2);
+const mergeObjectsV3 = (obj1, obj2) => {
+    const copy1 = {...obj1 };
+    const copy2 = {...obj2 };
+
+    const objCopy = Object.assign({}, copy2, copy1);
+
+    return objCopy;
+};
+
