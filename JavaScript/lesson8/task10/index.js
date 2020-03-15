@@ -15,6 +15,6 @@ const mergeObjectsV3 = (obj1, obj2) => {
 
 
 function mergeObjectsV4(obj1, obj2) {
-    const newObj = Object.assign({}, ...obj2, ...obj1);
+    const newObj = Object.assign({}, ...obj1, ...obj2);
     return newObj;
 }
