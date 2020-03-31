@@ -22,4 +22,4 @@ const getLocalStorageData = () => {
 
 console.log(getLocalStorageData());
 
-// export {getLocalStorageData}
+export {getLocalStorageData}
