@@ -1,4 +1,3 @@
-
 const a = 10;
 const b = 5
 
@@ -17,7 +16,6 @@ export function calculator(a, b) {
     }
 }
 
-
 /*
  * Ф-ция multiplier должна быть создана на основе calculator
  * с использования .bind
@@ -25,8 +23,8 @@ export function calculator(a, b) {
  */
 // ...your code here
 
-export const multiplier = calculator.bind({operation: '*'}, a, b);
-console.log(multiplier());
+export const multiplier = calculator.bind({operation: '*'});
+console.log(multiplier(a, b));
 
 /*
  * Ф-ция summator должна быть создана на основе calculator
@@ -35,8 +33,8 @@ console.log(multiplier());
  */
 // ...your code here
 
-export const summator = calculator.bind({operation: '+'}, a, b);
-console.log(summator());
+export const summator = calculator.bind({operation: '+'});
+console.log(summator(a, b));
 
 /*
  * Ф-ция twice должна быть создана на основе calculator
@@ -45,5 +43,5 @@ console.log(summator());
  */
 // ...your code here
 
-export const twice = calculator.bind({operation: '*'}, a, 2);
-console.log(twice());
+export const twice = calculator.bind({operation: '*'});
+console.log(twice(a,2));
