@@ -43,5 +43,5 @@ console.log(summator(a, b));
  */
 // ...your code here
 
-export const twice = calculator.bind({operation: '*'});
-console.log(twice(a,2));
+export const twice = calculator.bind({operation: '*'}, 2);
+console.log(twice(a));
