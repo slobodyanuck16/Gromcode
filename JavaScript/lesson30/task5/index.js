@@ -25,6 +25,6 @@ const imgSrc = 'https://miro.medium.com/max/1200/1*mk1-6aYaf_Bes1E3Imhc0A.jpeg';
 
 const result = addImageV2(imgSrc);
 
-result.then(data => console.log(data));
+result.catch(data => console.log(data));
 
 console.log(result);
