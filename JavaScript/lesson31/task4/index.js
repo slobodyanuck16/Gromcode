@@ -1,36 +1,27 @@
-const successPromise = new Promise(resolve => {
-  resolve(32);
+const serverResponsePromise = new Promise(resolve => {
+  const serverResponse = {
+      ok: true,
+      json() {
+          return Promise.resolve({
+              name: 'John',
+              age: 20
+          });
+      }
+  }
+  resolve(serverResponse);
 });
 
 /*
-* исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
+* допишите первый обработчик, чтобы во второй попал объект пользователя
 */
 
-successPromise
-  .then(number => {
-      const halfNumber = number / 2;
-      return halfNumber;
-  })
-  .then(number => {
-      /* fix this handler */
-      const squaredNumber = number * number;
-      return squaredNumber;
+serverResponsePromise
+  .then(response => {
+      /* ...code here */
+      return response.json();
   })
   .then(result => {
-      console.log(result); // 256
-  });
-
-/*
-* исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
-*/
-successPromise
-  .then(number => {
-      /* fix this handler */
-      const tenNumber = number * 10;
-      return tenNumber;
-  })
-  .then(result => {
-      console.log(result); // 320
+      console.log(result); // { name: 'John', age: 20 }
   });
 
 console.log('!!! Обратите внимание, что этот текст вывелся самым первым. Ведь это синхронный код, а промисы - асинхронны !!!');
