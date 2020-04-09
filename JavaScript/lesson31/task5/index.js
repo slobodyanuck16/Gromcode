@@ -9,4 +9,5 @@ export const delay = time => new Promise((resolve) => {
 //       }),time);
 // })
 
-delay(3000).then((console.log('Done')));
+delay(3000)
+.then(() => (console.log('Done')));

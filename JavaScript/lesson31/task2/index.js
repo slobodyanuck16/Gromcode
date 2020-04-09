@@ -14,7 +14,7 @@ export const asyncCalculator = num => new Promise((resolve) => {
     .then(value => new Promise((resolve) => {
         setTimeout(() => {
             const result = value * 2;
-            console.log(`Double value: ${result}`);
+            console.log(`Doubled value: ${result}`);
             resolve(result);
         }, 500);
     }));
