@@ -1,36 +1,19 @@
-const successPromise = new Promise(resolve => {
-  resolve(32);
+/*
+ * ф-ция makePromise должна вернуть промис со значением переданным в ф-цию
+ */
+
+/* ...code here */
+
+const makePromise = (value) => new Promise(resolve => {
+  setTimeout(() => {
+      resolve(value);
+  }, 0);
 });
 
 /*
-* исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
-*/
-
-successPromise
-  .then(number => {
-      const halfNumber = number / 2;
-      return halfNumber;
-  })
-  .then(number => {
-      /* fix this handler */
-      const squaredNumber = number * number;
-      return squaredNumber;
-  })
-  .then(result => {
-      console.log(result); // 256
-  });
-
-/*
-* исправьте цепочку промисов, чтобы в последнем обработчике вывелось нужное число
-*/
-successPromise
-  .then(number => {
-      /* fix this handler */
-      const tenNumber = number * 10;
-      return tenNumber;
-  })
-  .then(result => {
-      console.log(result); // 320
-  });
-
-console.log('!!! Обратите внимание, что этот текст вывелся самым первым. Ведь это синхронный код, а промисы - асинхронны !!!');
+ * пример использования
+ */
+makePromise(17)
+    .then(number => {
+        console.log(number); // 17
+    });
