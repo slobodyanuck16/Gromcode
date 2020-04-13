@@ -4,7 +4,7 @@
 
 /* ...code here */
 
-const makePromise = (value) => new Promise(resolve => {
+export const makePromise = (value) => new Promise(resolve => {
   setTimeout(() => {
       resolve(value);
   }, 0);
