@@ -1,35 +1,29 @@
-const servers = [
-    'https://server.com/us',
-    'https://server.com/eu',
-    'https://server.com/au',
-];
+const baseUrl = 'https://5e5cf5eb97d2ea0014796f01.mockapi.io/api/v1/tasks';
 
-const getRandomNum = (from, to) =>
-    from + Math.random() * (from - to);
+/* getTasksList code here */
 
-const request = url =>
-    new Promise(resolve => {
-        const randomDelay = getRandomNum(1000, 3000);
-        setTimeout(() =>
-            resolve({
-                userData: {
-                    name: "Tom",
-                    age: 17
-                },
-                source: url
-            }), randomDelay);
-    });
+const getTasksList = () => {
+    return fetch(baseUrl)
+        .then(response =>
+            response.json());
+}
 
-export const getUserASAP = userId => {
-    const userUrls = servers
-        .map(serverUrl =>
-            `${serverUrl}/users/${userId}`);
+console.log(getTasksList());
 
-    const requests = userUrls
-        .map(UserUrl =>
-            request(UserUrl));
 
-    return Promise.race(requests);
-};
-getUserASAP('user-id-1')
-    .then(res => console.log(res));
+/* getTaskById code here */
+
+const getTaskById = (id) => {
+    return fetch(baseUrl)
+    .then(response => response.json())
+    .then(arr => arr[+`${id}` - 1])
+  }
+
+/* примеры использования */
+getTasksList().then(tasksList => {
+    console.log(tasksList); // [{"id":"1", "done":false ... }, {"id":"2", "done":true ... }, ...]
+});
+
+getTaskById('2').then(taskData => {
+    console.log(taskData); // {"id":"1", "done":false ... }
+});
