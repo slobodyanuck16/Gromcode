@@ -8,8 +8,6 @@ export const getTasksList = () => {
             response.json());
 }
 
-console.log(getTasksList());
-
 /* getTaskById code here */
 
 export const getTaskById = taskId => {
