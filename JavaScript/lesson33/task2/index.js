@@ -13,10 +13,10 @@ console.log(getTasksList());
 
 /* getTaskById code here */
 
-export const getTaskById = (id) => {
+export const getTaskById = taskId => {
     return fetch(baseUrl)
     .then(response => response.json())
-    .then(arr => arr[+`${id}` - 1])
+    .then(arr => arr[+`${taskId}` - 1])
   }
 
 /* примеры использования */
