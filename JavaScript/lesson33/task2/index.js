@@ -10,13 +10,11 @@ export const getTasksList = () => {
 
 console.log(getTasksList());
 
-
 /* getTaskById code here */
 
 export const getTaskById = taskId => {
-    return fetch(baseUrl)
+    return fetch(`${baseUrl}/${taskId}`)
     .then(response => response.json())
-    .then(arr => arr[+`${taskId}` - 1])
   }
 
 /* примеры использования */
@@ -24,6 +22,6 @@ getTasksList().then(tasksList => {
     console.log(tasksList); // [{"id":"1", "done":false ... }, {"id":"2", "done":true ... }, ...]
 });
 
-getTaskById('2').then(taskData => {
+getTaskById('1').then(taskData => {
     console.log(taskData); // {"id":"1", "done":false ... }
 });
