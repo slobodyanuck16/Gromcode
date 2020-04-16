@@ -23,6 +23,7 @@ export const createUser = userObj => {
       headers: {
           'Content-Type': 'application/json;charset=utf-8'
       },
+      body: JSON.stringify(userObj),
   })
 }
 
@@ -34,6 +35,7 @@ export const updateUser = (userId, updatedUserData) => {
       headers: {
           'Content-Type': 'application/json;charset=utf-8'
       },
+      body: JSON.stringify(updatedUserData),
   })
 }
 
