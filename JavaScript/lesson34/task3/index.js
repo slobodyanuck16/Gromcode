@@ -1,19 +1,41 @@
-/*
- * ф-ция makePromise должна вернуть промис со значением переданным в ф-цию
- */
+const baseUrl = 'https://5e97f8bc77f5430016339cb5.mockapi.io/api/v1/loginForm'
 
-/* ...code here */
+const inp = document.querySelectorAll('input');
+const errorText = document.querySelector('.error-text');
+const loginForm = document.querySelector('.login-form');
+const submitBtn = document.querySelector('.submit-button');
 
-export const makePromise = (value) => new Promise(resolve => {
-  setTimeout(() => {
-      resolve(value);
-  }, 0);
-});
+const reportValidation = () => {
+    if (loginForm.reportValidity())
+        submitBtn.disabled = false;
+    else submitBtn.disabled = true;
+};
 
-/*
- * пример использования
- */
-makePromise(17)
-    .then(number => {
-        console.log(number); // 17
-    });
+loginForm.addEventListener('input', reportValidation);
+
+const validationUser = e => {
+    e.preventDefault();
+
+    const userValue = [...new FormData(loginForm)]
+        .reduce((email, [name, pass]) =>
+            ({...email, [name]: pass }), {});
+
+    fetch(baseUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json;charset=utf-8',
+            },
+            body: JSON.stringify(userValue)
+        })
+        .then(response => response.json())
+        .then(data => {
+            inp.forEach(elem => elem.value = '');
+            alert(JSON.stringify(data));
+        })
+        .catch(() => {
+            errorText.textContent = 'Failed to create user';
+        });
+
+}
+
+submitBtn.addEventListener('click', validationUser);
