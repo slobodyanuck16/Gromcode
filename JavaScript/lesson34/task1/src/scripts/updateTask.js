@@ -51,16 +51,12 @@ export const onDeleteTask = e => {
     const tasksList = getItem('tasksList');
     const { text, createDate } = tasksList
         .find(task => task.id === taskId);
-    const done = e.target.checked;
 
-    const updatedTask = {
+    const curTask = {
         text,
         createDate,
-        done,
-        finishDate: done ?
-            new Date().toISOString() : null
     };
-    deleteTask(taskId, updatedTask)
+    deleteTask(taskId, curTask)
         .then(() => getTasksList())
         .then(newTasksList => {
             setItem('tasksList', newTasksList);
