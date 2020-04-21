@@ -9,7 +9,7 @@ export const getUsersBlogs = async usersArr => {
                 throw new Error('Failed to fetch users blog');
             })
             .then(users => users.blog));
-        const usersData = await Promise.all(response);
+        const usersData = Promise.all(response);
 
         return usersData;
     } catch (error) {
