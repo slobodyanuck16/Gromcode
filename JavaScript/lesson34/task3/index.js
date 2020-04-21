@@ -19,7 +19,8 @@ const validationUser = e => {
     const userValue = [...new FormData(loginForm)]
         .reduce((email, [name, pass]) =>
             ({...email, [name]: pass }), {});
-
+    console.log(userValue);
+    
     fetch(baseUrl, {
             method: 'POST',
             headers: {
