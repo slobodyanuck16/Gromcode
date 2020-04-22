@@ -1,0 +1,39 @@
+{
+  "name": "Project_Calendar",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "copy:html": "cp ./src/index.html ./dist/index.html",
+    "copy:scripts": "cp -R ./src/scripts ./dist/scripts",
+    "clean": "rm -rf ./dist",
+    "build": "npm-run-all build:styles copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slobodyanuck16/Project_Calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slobodyanuck16/Project_Calendar/issues"
+  },
+  "homepage": "https://github.com/slobodyanuck16/Project_Calendar#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "devDependencies": {
+    "@babel/preset-env": "^7.9.5",
+    "jest": "^25.4.0",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.3"
+  },
+  "description": ""
+}
