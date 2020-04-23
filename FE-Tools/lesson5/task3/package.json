@@ -1,0 +1,47 @@
+{
+  "name": "task3",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "build:styles": "sass ./src/styles/index.scss ./dist/styles.css",
+    "copy:html": "cp ./src/index.html ./dist/index.html",
+    "transpile:scripts": "babel ./src --out-dir=./temp",
+    "build:scripts": "webpack ./temp/index.js",
+    "clean": "rm -rf ./dist",
+    "build": "npm-run-all clean transpile:scripts build:* copy:*"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/slobodyanuck16/Project_Calendar.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/slobodyanuck16/Project_Calendar/issues"
+  },
+  "homepage": "https://github.com/slobodyanuck16/Project_Calendar#readme",
+  "dependencies": {
+    "babel-eslint": "^10.1.0",
+    "core-js": "^3.6.5",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-plugin-import": "^2.20.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.9.0",
+    "@babel/preset-env": "^7.9.5",
+    "all": "0.0.0",
+    "jest": "^25.4.0",
+    "npm-run": "^5.0.1",
+    "npm-run-all": "^4.1.5",
+    "sass": "^1.26.3",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.11"
+  },
+  "description": ""
+}
