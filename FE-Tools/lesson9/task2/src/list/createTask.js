@@ -1,5 +1,5 @@
 import { renderTasks } from './renderer';
-import { getItem, setItem } from './storage';
+import { setItem } from './storage';
 import { createTask, getTasksList } from './tasksGateway';
 
 export const onCreateTask = () => {

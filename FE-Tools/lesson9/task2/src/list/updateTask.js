@@ -2,18 +2,6 @@ import { renderTasks } from './renderer';
 import { getItem, setItem } from './storage';
 import { updateTask, getTasksList, deleteTask } from './tasksGateway';
 
-export const onListClick = (e) => {
-  const check = e.target.classList.contains('list-item__checkbox');
-  const del = e.target.classList.contains('list-item__delete-btn');
-
-  if (del) {
-    onDeleteTask(e);
-  }
-  if (check) {
-    onToggleTask(e);
-  }
-};
-
 export const onToggleTask = (e) => {
   const isCheckbox = e.target.classList.contains('list-item__checkbox');
 
@@ -71,4 +59,16 @@ export const onDeleteTask = (e) => {
 // 1.5 - Find this e.target list item element in api storage by (id???)
 // 2 - Delete this e.target list item
 // 3 - Then render tasks
+};
+
+export const onListClick = (e) => {
+  const check = e.target.classList.contains('list-item__checkbox');
+  const del = e.target.classList.contains('list-item__delete-btn');
+
+  if (del) {
+    onDeleteTask(e);
+  }
+  if (check) {
+    onToggleTask(e);
+  }
 };
